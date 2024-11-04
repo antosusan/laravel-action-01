@@ -21,5 +21,5 @@ RUN apk update && apk add git unzip && \
 RUN composer install
 
 
-# RUN ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=3000"]
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=3000"]
 # EXPOSE 3000
