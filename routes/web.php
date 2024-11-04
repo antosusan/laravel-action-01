@@ -28,3 +28,7 @@ Route::resource('products', ProductController::class);
 // testing upload file
 Route::get('/upload', [FileController::class, 'showUploadForm'])->name('upload.form');
 Route::post('/upload', [FileController::class, 'uploadFile'])->name('file.upload');
+//halaman about
+// routes/web.php
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->name('about');
+
