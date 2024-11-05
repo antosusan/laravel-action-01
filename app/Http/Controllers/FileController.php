@@ -16,7 +16,7 @@ class FileController extends Controller
     {
         // Validasi file
         $request->validate([
-            'file' => 'required|mimes:jpg,png,pdf|max:2048', // Contoh validasi file
+            'file' => 'required|mimes:jpg,png,pdf|max:2048', // Conto
         ]);
 
         // Upload file ke storage
